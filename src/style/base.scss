@@ -1,0 +1,65 @@
+// COLORS
+
+$navy: #0c161d;
+$light-grey: #dadada;
+$dark-grey: #626262;
+$pastel-blue: #bbcfd9;
+$yuma-blue: #26a0da;
+$dark-blue: #255c78;
+$dark-blue-grey: #314755;
+$almost-black: #000612;
+$light-blue: #5b90b2;
+$light-blue-grey: #bdc4c9;
+$button-hover-font: #255c78;
+
+$computerBreakpoint: 950px;
+$emblemTextDoubleBreakpoint: 1700px; //breakpoint for prettier emblem text description on bigger screens
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: ' ';
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@mixin arrow($main-color, $second-color, $orientation: 45deg, $size: 16px, $thickness: 4px) {
+  width: $size;
+  height: $size;
+  border-top: $thickness solid $main-color;
+  border-right: $thickness solid $main-color;
+  transition: all 200ms ease;
+  transform: translate3d(0, -50%, 0) rotate($orientation);
+
+  &:hover {
+      border-color: $second-color;
+      box-shadow: $thickness (-$thickness) 0 $main-color;
+  }
+
+  &:before {
+      content: '';
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-40%, -60%) rotate(45deg);
+      width: 200%;
+      height: 200%;
+  }
+}

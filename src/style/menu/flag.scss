@@ -1,0 +1,14 @@
+.flag_button {
+    display: flex;
+    align-items: center;
+    
+    padding: 0 20px;
+    height: 50px;
+    justify-content: space-evenly;
+    position: relative;
+    vertical-align: middle;
+    line-height: 1;
+    img {
+        cursor: pointer;
+    }
+}

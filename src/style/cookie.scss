@@ -1,0 +1,20 @@
+@use 'base';
+
+.cookieConsent {
+    background-color: base.$dark-blue-grey !important;
+    z-index: 9999999999 !important;
+    
+    .read-more {
+        color: base.$yuma-blue;
+        text-decoration-line: underline;
+    }
+    
+    .read-more:hover {
+        color: base.$pastel-blue;
+    }
+
+    button {
+        color: white !important;
+        background: base.$yuma-blue !important;
+    }
+}

@@ -1,0 +1,137 @@
+@use 'base';
+
+@mixin header_image {
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 10px auto 50px;
+
+  @media screen and (min-width: base.$computerBreakpoint) {
+    margin: 0 50px 35px 50px;
+  }
+}
+
+.homepage-header-background {
+  background-image: url('../yuma_website_assets/ASSETS_converted/homePageDesktopTopPhoto.webp');
+  background-position-x: 72%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding-top: 70px !important;
+  padding-bottom: 31px !important;
+  margin: 0 !important;
+}
+
+.no-webp .homepage-header-background {
+  background-image: url('../yuma_website_assets/ASSETS/homePageDesktopTopPhoto.png');
+}
+.homepage-header {
+  h1 {
+    font-weight: 600;
+    font-size: 3.4rem;
+    padding-bottom: 0.4rem;
+  }
+
+  h2 {
+    font-weight: 600;
+    font-size: 2rem;
+  }
+
+  .text {
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: white;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 44px;
+    text-align: center;
+    background-color: rgba($color: #000000, $alpha: 0.6);
+  }
+}
+
+@media screen and (max-width: base.$computerBreakpoint) {
+  .en-content {
+    background-size: auto;
+    padding-bottom: 0.5rem !important;
+    h1 {
+      text-align: left;
+      line-height: 1.2em !important;
+      font-size: 4rem;
+    }
+
+    p {
+      text-align: left;
+      padding-right: 2rem;
+      font-size: 1em;
+      // padding: 0.5em;
+    }
+
+    .text {
+      width: auto;
+      max-width: 150%;
+      margin: 0 -1em 0 -1em;
+      // padding: 0 1em 0 1em;
+      // padding-right: 1.5rem;
+      // text-align: left;
+      margin-bottom: 1rem;
+    }
+
+    .text:after {
+      content: url('../yuma_website_assets/ASSETS_converted/ROMB_Mobile.webp');
+      position: absolute;
+      top: -8rem;
+      right: -1rem;
+      height: 50px;
+    }
+  }
+
+  .no-webp .en-content {
+    .text:after {
+      content: url('../yuma_website_assets/ASSETS/ROMB_Mobile.png');
+    }
+  }
+
+//   .homepage-header 
+  .pl-content {
+    background-size: auto;
+    padding-bottom: 0.5rem !important;
+    h1 {
+      text-align: left;
+      line-height: 1.2em !important;
+      font-size: 4rem;
+    }
+
+    p {
+      text-align: left;
+      padding-right: 2rem;
+      font-size: 1em;
+      // padding: 0.5em;
+    }
+
+    .text {
+      width: auto;
+      max-width: 150%;
+      margin: 0 -1em 0 -1em;
+      // padding: 0 1em 0 1em;
+      // padding-right: 1.5rem;
+      // text-align: left;
+      margin-bottom: 1rem;
+    }
+
+    .text:after {
+      content: url('../yuma_website_assets/ASSETS_converted/ROMB_Mobile.webp');
+      position: absolute;
+      top: -8rem;
+      right: -1rem;
+      height: 50px;
+    }
+  }
+  .no-webp .pl-content {
+    .text:after {
+      content: url('../yuma_website_assets/ASSETS/ROMB_Mobile.png');
+    }
+  }
+}

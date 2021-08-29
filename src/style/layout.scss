@@ -1,0 +1,29 @@
+@import "base";
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+    max-width: 1160px;
+    background-image: url("../yuma_website_assets/ASSETS/homePageDesktopBottomImage.png");
+    // background-repeat: no-repeat;
+    background-size: cover;
+    // color: $pastel-blue;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 61px;
+    color: white;
+    font-weight: 900;
+}
+
+p, h2 {
+    font-size: 26px;
+    line-height: 32px;
+    color: $pastel-blue;
+}
+
+em {
+    color: $yuma-blue;
+}
+

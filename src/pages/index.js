@@ -1,29 +1,29 @@
 import * as React from "react"
+// import NavBar from "../js/components/navbar"
+// import LayoutSoftware from "../js/layouts/layout-software"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-
+import { LocalizedLink } from "gatsby-theme-i18n"
+import { useIntl } from "react-intl"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-    </p>
-  </Layout>
-)
+const IndexPage = () => {
+  const intl = useIntl()
+  return (
+    <Layout>
+      {/* section 1 eff solutions
+      section 2 soft for biz
+      section 3 icons (2 cols)
+      section 4 map
+      <ClientsSlider />
+      <Testimonials />
+      section 5 set for success
+      <ContactBar />
+      section 6 at your request
+      section 7 it outsourcing (3 cols) */}
+    </Layout>
+  )
+}
 
 export default IndexPage

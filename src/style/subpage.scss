@@ -1,0 +1,95 @@
+@use 'base';
+
+@mixin image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85vh;
+    margin-top: 120px;
+    margin-bottom: 200px;
+}
+
+.subpage {
+
+    padding-top: 120px;
+
+    ol {
+        list-style-type: decimal;
+        line-height: 2;
+    }
+
+    .top-text {
+        padding-left: 5em;
+        padding-right: 5em;
+        h1 {
+            padding-bottom: 200px;
+            color: white;
+        }
+    }
+
+//     .mobile-apps {
+//         @include image;
+//         background-image: url('../yuma_website_assets/ASSETS_converted/mobileappsDesktopImage.webp');
+//     }
+//     .migrations {
+//         @include image;
+//         background-image: url('../yuma_website_assets/ASSETS_converted/systemmigrationsDesktopImage.webp');
+//     }
+//     .outsourcing {
+//         @include image;
+//         background-image: url('../yuma_website_assets/ASSETS_converted/itoutsourcingDesktopImage.webp');
+//     }
+//     .software {
+//         @include image;
+//         background-image: url('../yuma_website_assets/ASSETS_converted/softwareDesktopImage.webp');
+//     }
+//     .about {
+//         @include image;
+//         background-image: url('../yuma_website_assets/ASSETS_converted/aboutusDesktopImage.webp');
+//     }
+}
+
+.no-webp .subpage {
+    .mobile-apps {
+        @include image;
+        background-image: url('../yuma_website_assets/ASSETS/mobileappsDesktopImage.png');
+    }
+    .migrations {
+        @include image;
+        background-image: url('../yuma_website_assets/ASSETS/systemmigrationsDesktopImage.png');
+    }
+    .outsourcing {
+        @include image;
+        background-image: url('../yuma_website_assets/ASSETS/itoutsourcingDesktopImage.png');
+    }
+    .software {
+        @include image;
+        background-image: url('../yuma_website_assets/ASSETS/softwareDesktopImage.png');
+    }
+    .about {
+        @include image;
+        background-image: url('../yuma_website_assets/ASSETS/aboutusDesktopImage.png');
+    }
+}
+
+@media screen and (max-width: base.$computerBreakpoint) {
+    .subpage {
+        padding-top: 14px;
+        .top-text {
+            padding-left: 1em;
+            padding-right: 1em;
+            margin-bottom: 10em;
+            
+            h1 {
+                padding-bottom: 40px;
+                color: white;
+                font-size: 2.2rem;
+            }
+
+            h2 {
+                font-size: 1.6rem;
+                padding-bottom: 0.5rem;
+            }
+        }
+    }
+}

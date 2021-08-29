@@ -1,0 +1,65 @@
+@use 'base';
+
+.buttoned a{
+   
+    color: #fff;
+    background: linear-gradient(#4d9fd5, #3e6f90); // #3E6F90  #4D9FD5
+    background-color: #3e6f90; // Old browsers
+    border-radius: 0.8rem;
+    border: 2px solid rgb(43, 88, 117);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    height: 40px;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 14px;
+    
+  
+  &:hover {
+    background: white;
+    background-color: white;
+    color: #255C78!important;
+    a {
+      color: #255C78!important;
+    }
+  }
+  &:active {
+    color: #fff;
+  }
+}
+
+.migrations {
+  padding-bottom: 200px !important;
+
+  .migrations-element {
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 9em;
+    margin-bottom: 80px;
+    background-image: url('../yuma_website_assets/ASSETS_converted/bottomImage3.webp');
+  }
+}
+
+.no-webp .migrations {
+  .migrations-element {
+    background-image: url('../yuma_website_assets/ASSETS/bottomImage3.png');
+  }
+}
+
+@media screen and (max-width: base.$computerBreakpoint) {
+  .migrations {
+    margin-top: 0px !important;
+    .migrations-element {
+      margin-top: 200px;
+      margin-bottom: 24px !important;
+    }
+  }
+
+  .subpage {
+    .top-text {
+      margin-bottom: 200px !important;
+    }
+  }
+}

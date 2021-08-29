@@ -1,0 +1,22 @@
+.sygnet-mobile {
+    margin-left: 1em !important;
+}
+
+.hamburger-mobile {
+    margin-right: 0.7em !important;
+    margin-top: 0.8em !important;
+}
+
+
+.listed-items {
+    padding-bottom: 2em;
+    li:hover {
+        background-image: url("../../yuma_website_assets/ASSETS_converted/buttonHooverMenu.webp");
+    }
+}
+
+.no-webp .listed-items {
+    li:hover {
+        background-image: url("../../yuma_website_assets/ASSETS/buttonHooverMenu.png");
+    }
+}

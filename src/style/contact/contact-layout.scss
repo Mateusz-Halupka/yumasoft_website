@@ -1,0 +1,85 @@
+@use '../base';
+
+.read-more {
+    color: base.$yuma-blue;
+    text-decoration-line: underline;
+}
+
+.read-more:hover {
+    color: base.$pastel-blue;
+}
+
+
+.button-submit {
+    width: 150px;
+    height: 50px;
+    background-color: red;
+}
+
+.contact-layout {
+
+
+    .contact-form {
+        margin: 0 auto !important;
+        max-width: 90% !important;
+        text-align: center;
+
+        h1 {
+            color: white;
+            padding-top: 120px;
+            padding-bottom: 124px;
+            text-align: left
+        }
+
+        .form-label {
+            color: base.$light-blue-grey !important;
+            text-align: left;
+        }
+
+        textarea { 
+            resize: none !important;
+            height: 300px !important;
+         }
+
+        .formInput  {
+            border: solid 2px rgb(72, 156, 209) !important;
+            background-color: base.$navy!important;
+            
+            margin-bottom: 1rem!important;
+            color: white!important;
+            height: 40px;
+            margin-bottom: 32px !important;
+        }
+        
+        .invalid {
+            border: solid 2px rgb(100, 0, 0) !important;
+        }
+        
+        .formInput::selection {
+            color: white;
+            background: rgb(177, 214, 253);
+            }
+
+        .captcha {
+            margin: 0 auto;
+            width: 304px;
+            padding-top: 56px;
+            padding-bottom: 56px;
+        }
+
+        .active {
+            border-width: 0px;
+        }
+    }
+}
+
+@media screen and (min-width: base.$computerBreakpoint) {
+    .contact-form {
+        width: 640px;
+        margin: 0 auto;
+
+        .button {
+            margin-bottom: 200px;
+        }
+    }
+}

@@ -1,0 +1,136 @@
+@use '../base';
+
+.job-details {
+    position: relative;
+    padding-bottom: 56px;
+
+    h1 {
+        color: white;
+        text-align: left;
+        padding-left: 2rem;
+        padding-bottom: 40px;
+    }
+
+    .jobOfferDetailsHeader {
+        background-image: url('../../yuma_website_assets/ASSETS_converted/backgroundJobTitle.webp');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+
+        padding-left: 2rem;
+        position: absolute;
+        width: 100%;
+        height: 140px;
+
+        .text {
+            padding-top: 1em;
+            .technology {
+                color: rgb(74, 159, 213);
+                font-size: 2rem;
+                font-weight: 800;
+            }
+
+            .position {
+                color: white;
+                height: 4rem;
+                font-size: 3rem;
+                font-weight: 800;
+            }
+        }
+    }
+
+    .no-webp .jobOfferDetailsHeader {
+        background-image: url('../../yuma_website_assets/ASSETS/backgroundJobTitle.png');
+    }
+
+    .jobOfferDetailsBody {
+        padding-top: 7rem;
+        background: linear-gradient(to bottom, rgb(27, 52, 70), rgb(7, 38, 55));
+        padding-bottom: 38px;
+        border-radius: 25px;
+
+        .bodyText {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 400;
+            text-align: justify;
+        }
+
+        .textBlock {
+            margin-top: 58px;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            line-height: 1.15;
+        }
+
+        .availability {
+
+            margin-bottom: 1em;
+            font-style: italic;
+        }
+        .levelAndSalary {
+            font-weight: 900;
+        }
+
+        .detailsDepiction {
+            margin-bottom: 5rem;
+        }
+    }
+    .applyButton {
+        margin-top: 56px !important;
+    }
+}
+
+@media screen and (min-width: base.$computerBreakpoint) {
+    .job-details {
+        padding-left: 5em;
+        padding-right: 5em;
+        padding-bottom: 120px;
+
+        .bodyText {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 400;
+
+        }
+
+        .textBlock {
+            margin-top: 58px;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            line-height: 1.15;
+        }
+
+        h1 {
+            color: white;
+            text-align: left;
+            padding-top: 200px;
+            padding-bottom: 124px;
+        }
+
+        .jobOfferDetailsHeader {
+            width: 100%;
+        }
+
+        .jobOfferDetailsBody {
+            padding-top: 166px;
+            background: transparent;
+            padding-bottom: 38px;
+            border-radius: 25px;
+        }
+    }
+
+    .work-together-details {
+        background-image: url('../../yuma_website_assets/ASSETS_converted/joboffersDesktopImage.webp');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 85vh;
+        margin-top: 120px;
+        margin-bottom: 200px;
+    }
+    
+    .no-webp .work-together-details {
+        background-image: url('../../yuma_website_assets/ASSETS/joboffersDesktopImage.png');
+    }
+}

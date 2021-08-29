@@ -1,0 +1,67 @@
+@use 'base';
+
+.homepage-map {
+    background-color: white;
+    padding-top: 160px !important;
+
+    h1 {
+        color: #314755;
+        font-size: 64px;
+        fill: solid;
+    }
+
+    h2 {
+        padding-top: 32px;
+        margin-bottom: 0px;
+        color: #314755;
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    h3 {
+        margin-top: 0px;
+        padding-bottom: 42px;
+        color: base.$navy;
+        font-weight: 500;
+        font-size: 28px;
+    }
+
+    p {
+        padding-bottom: 160px;
+        color: #626262;
+        font-weight: 500;
+        font-size: 16px;
+        width: 45%;
+        letter-spacing: 0.09px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: base.$computerBreakpoint) {
+    .homepage-map {
+
+        h2 {
+            padding-top: 70px;
+            font-size: 38px;
+            margin: auto;
+            text-align: center!important;
+        }
+    
+        h3 {
+            padding-top: 25px;
+            padding-bottom: 25px;
+            color: base.$dark-blue-grey;
+            text-align: center!important;
+            margin: auto;
+        }
+
+        p {
+            width: 100%;
+            padding-bottom: 160px;
+            padding-left: 0.2em;
+            padding-right: 0.2em;
+            // padding: 0.2em;
+        }
+    }
+}

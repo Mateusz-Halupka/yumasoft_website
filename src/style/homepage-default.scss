@@ -1,0 +1,117 @@
+@use 'base';
+
+.homepage-default-text {
+    color: base.$dark-grey;
+    background-color: white;
+    div {
+        p {
+            padding: 5em 1em;
+            vertical-align: middle;
+            font-size: 28px;
+            letter-spacing: 0;
+            line-height: 34px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.homepage-default {
+    background-color: white;
+    .mid-image {
+        background-image: url('../yuma_website_assets/ASSETS_converted/Default_Success_image.webp');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50em;
+    }
+
+    .column {
+        padding: 0 !important;
+    }
+
+    h1, h2 {
+        vertical-align: text-top;
+        color: white;
+        padding: 1em;
+        width: 50%;
+        text-align: center!important;
+        font-size: 43px!important;
+        font-weight: 600!important;
+        /*background-color: rgba($color: #000000, $alpha: 0.6);*/
+        width: 100%;
+    }
+
+    .emblems {
+        padding-bottom: 160px !important;
+        padding-left: 5em !important;
+        padding-right: 5em !important;
+
+        // width: 100%;
+        h2 {
+            text-align: left;
+            color: #314755;
+            width: 90%;
+            line-height: 1.3em;
+            height: 5em;
+        }
+
+        .column {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding-bottom: 26px;
+            // margin: 0 auto;
+        }
+    }
+}
+
+.no-webp .homepage-default {
+    .mid-image {
+        background-image: url('../yuma_website_assets/ASSETS/Default_Success_image.png');
+    }
+}
+
+@media screen and (max-width: base.$computerBreakpoint) {
+    .homepage-default {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+
+        .image {
+            background-size: 100% auto;
+        }
+
+        h1, h2 {
+            padding: 2em 0.5em;
+            text-align: left;
+            width: 100%;
+            font-size: 1.4em!important;
+        }
+
+        .bottom-text {
+            padding-left: 1em !important;
+            padding-right: 1em !important;
+        }
+
+        .emblems {
+            padding-top: 30px !important;
+            padding-bottom: 138px !important;
+            padding-left: 1em !important;
+            padding-right: 1em !important;
+            background-color: base.$light-grey;
+            margin: 0 auto;
+            width: 100%;
+            h2 {
+                text-align: center;
+                color: #314755;
+                width: 100%;
+                margin: 2rem 0;
+            }
+
+            .column {
+                display: inline-block;
+            }
+        }
+    }
+}
+

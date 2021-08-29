@@ -1,0 +1,73 @@
+@use 'base';
+
+.footer-basic {
+  padding: 2em 4em 68px 4em !important;
+  width: 100%;
+  p {
+    font-size: 12px !important;
+  }
+  .footer-links {
+    a {
+      color: base.$dark-grey;
+    }
+  }
+  .line {
+    margin-bottom: 71px;
+    width: 100%;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+  }
+  .adres {
+    text-align: left !important;
+  }
+  .social-icons > * {
+    padding: 0 10px 0 0;
+  }
+  .social-icons img.ui.image {
+    display: inline-block;
+    border-radius: 5px !important;
+  }
+  .social-icons:last-child {
+    padding: 0 !important;
+  }
+}
+
+.copyright {
+  padding-top: 1rem;
+  font-size: small;
+}
+
+@media screen and (max-width: base.$computerBreakpoint) {
+  .logo {
+    margin: 0 auto;
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 100%;
+  }
+  .footer-basic {
+    padding: 2em 0 68px 0 !important;
+    width: 100%;
+    .line {
+      margin-bottom: 0px;
+      width: 0%;
+      height: 0px;
+      border-bottom: 0px;
+    }
+    .adres {
+      text-align: center !important;
+      padding-left: 4em;
+      padding-right: 4em;
+    }
+    .footer-links {
+      text-align: center !important;
+      text-decoration: underline;
+      padding-left: 4em;
+      padding-right: 4em;
+    }
+    .social-icons {
+      text-align: center !important;
+    }
+    .social-icons > * {
+      padding: 4.5vw;
+    }
+  }
+}
