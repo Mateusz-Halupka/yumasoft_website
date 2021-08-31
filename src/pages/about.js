@@ -8,7 +8,7 @@ const About = () => {
   return (
     <Layout>
       <SEO title="About us" />
-      <h1>ABOUT US</h1>
+      <h1>ABOUT US xDDDDD</h1>
       <h2>YUMASOFT - SOFTWARE FOR BUSINESS </h2>
 <p>Our company was established in 1998. Over the years, Yumasoft has become a team where the expertise of experienced specialists blends with the enthusiasm and creativity of young university graduates. It's a perfect mix - proven by years of our prompt, effective and reliable IT services in Wrocław.</p>
 
