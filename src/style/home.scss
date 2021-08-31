@@ -1,0 +1,35 @@
+@import "base";
+
+.home-header {
+    height: 550px;
+    background-image: url('../yuma_website_assets/ASSETS/homePageDesktopTopPhoto.png');
+    width: 100%;
+}
+
+.home-software {
+    height: 500px;
+    background: white;
+}
+
+.home-emblems {
+    height: 702px;
+    background: $light-grey;
+}
+
+.home-map {
+    height: 850px;
+    background: white;
+}
+
+.home-success {
+    height: 884px;
+    background-image: url('../yuma_website_assets/ASSETS/Default_Success_image.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-request {
+    height: 600px;
+    background: white;
+}

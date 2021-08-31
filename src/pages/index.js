@@ -6,22 +6,23 @@ import { StaticImage } from "gatsby-plugin-image"
 import { LocalizedLink } from "gatsby-theme-i18n"
 import { useIntl } from "react-intl"
 import Layout from "../components/layout"
+import "../style/home.scss"
 import SEO from "../components/seo"
 
 const IndexPage = () => {
   const intl = useIntl()
   return (
     <Layout>
-      {/* section 1 eff solutions
-      section 2 soft for biz
-      section 3 icons (2 cols)
-      section 4 map
-      <ClientsSlider />
-      <Testimonials />
-      section 5 set for success
-      <ContactBar />
-      section 6 at your request
-      section 7 it outsourcing (3 cols) */}
+      <div className="home-header"></div>
+      <div className="home-software"></div>
+      <div className="home-emblems"></div>
+      <div className="home-map"></div>
+      {/* <ClientsSlider />
+      <Testimonials /> */}
+      <div className="home-success"></div>
+      {/* <ContactBar /> */}
+      <div className="home-request"></div>
+      {/* section 7 'it outsourcing from wroclaw...' (3 cols) (previously homepage-footer - shares the background with the actual footer) */}
     </Layout>
   )
 }
