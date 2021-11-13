@@ -7,9 +7,30 @@
     margin-top: 0.8em !important;
 }
 
+#ul_top_hypers li {
+    display: inline-block;
+    margin-right: 30px;
+    margin-left: 30px;
+    line-height: 18px;
+    letter-spacing: 0.04px;
+}
+#menu-logo {
+    padding-left: 62px;
+    padding-right: 36px;
+    display: flex;
+    justify-content: center;
+}
+#menu-head {
+    padding-right: 387px;
+}
+#contact {
+margin-right: 150px;
+}
+
 
 .listed-items {
     padding-bottom: 2em;
+    display: inline;
     li:hover {
         background-image: url("../../yuma_website_assets/ASSETS_converted/buttonHooverMenu.webp");
     }
