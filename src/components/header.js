@@ -3,14 +3,21 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import "../style/menu/menu.scss"
 import { StaticImage } from "gatsby-plugin-image"
+import { useIntl } from "react-intl"
+import "../../i18n/react-intl/en.json"
+import "../../i18n/react-intl/pl.json"
 
-const Header = ({ siteTitle }) => (
+
+const Header = ({ siteTitle }) => {
+  const intl = useIntl().messages
+
+  return (
   <header
-    style={{
-      background: `black`,
-      marginBottom: `15px`,
-      marginTop: '15px',
-    }}
+    //style={{
+      //background: `black`,
+     // marginBottom: `1.45rem`,
+      //marginTop: '1.45rem',
+    //}}
   >
     <div class='menu'> 
       <ul id="ul_top_hypers">
@@ -41,25 +48,25 @@ const Header = ({ siteTitle }) => (
         color: `#DADADA`,
         textDecoration: `none`,}}>Start</Link>
         </li>
-        <li>
+        <li id="about">
       <Link to="/about"
       style={{
         color: `#DADADA`,
-        textDecoration: `none`,}}>O nas</Link>
+        textDecoration: `none`,}}>{intl.HeaderAbout}</Link>
         </li>
-        <li>
+        <li id="offer">
         <Link to="/offer"
       style={{
         color: `#DADADA`,
-        textDecoration: `none`,}}>Oferta</Link>
+        textDecoration: `none`,}}>{intl.HeaderOffer}</Link>
         </li>
-        <li>
+        <li id="jobs">
         <Link to="/jobs"
       style={{
         color: `#DADADA`,
-        textDecoration: `none`,}}>Praca</Link>
+        textDecoration: `none`,}}>{intl.HeaderJobs}</Link>
         </li>
-        <li>
+        <li id="blog">
         <a style={{
         color: `#DADADA`,
         textDecoration: `none`,}} href="https://blog.yumasoft.pl" target="_blank" rel="noopener noreferrer">
@@ -70,7 +77,27 @@ const Header = ({ siteTitle }) => (
         <Link to="/contact"
       style={{
         color: `#DADADA`,
-        textDecoration: `none`,}}>Kontakt</Link>
+        textDecoration: `none`,}}>{intl.HeaderContact}</Link>
+        </li>
+        <li id="en-flag">
+        <Link to="/"><StaticImage
+      src="../yuma_website_assets/ASSETS/flagENG_On.png"
+      alt="logoSygnet"
+      //placeholder="blurred"
+      layout="fixed"
+      width={20}
+      height={12}
+    /></Link>
+        </li>
+        <li id="pl-flag">
+        <Link to="/pl"><StaticImage
+      src="../yuma_website_assets/ASSETS/flagPOL_On.png"
+      alt="logoSygnet"
+      //placeholder="blurred"
+      layout="fixed"
+      width={20}
+      height={12}
+    /></Link>
         </li>
         </ul>
     </div>
@@ -94,7 +121,8 @@ const Header = ({ siteTitle }) => (
       </h1>
     </div>
   </header>
-)
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
